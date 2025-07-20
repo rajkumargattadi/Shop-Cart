@@ -1,0 +1,139 @@
+.plsidebar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    flex-basis: 20%;
+
+    align-self:flex-start;
+    position: sticky;
+    top:3rem;
+}
+
+.plsidebartitle{
+    padding: 0.5rem 0 0 0; 
+    margin-top: 0.5rem;
+    
+}
+.plwrapper{
+    display: flex;
+    flex-direction: row;
+}
+.pltitle{
+    text-align: center;
+    padding: 1.5rem;
+    font-size:3rem;
+    font-weight:300;
+}
+.category-item{
+    display: flex;
+    text-decoration: none;
+}
+.price-select{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.belowprice{
+    display: flex;
+    flex-direction: row;
+   
+}
+.minimum{
+    flex-basis: 50%; 
+}
+
+.Categorylist a{
+    padding: 0.4rem 1rem;
+    margin:6px;
+    border-bottom: 5px solid #5f65669b;
+    background-color: #757878;
+    color:rgb(206, 214, 219);
+    
+}
+.Categorylist a:last-child{
+    border-bottom: none;
+}
+.Categorylist a:hover{
+    background-color: rgb(246, 233, 216);
+    opacity: 0.8;
+    color: rgb(36, 35, 35);
+}
+.sidebarfilter{
+    margin-top: 10px;
+}
+.belowprice{
+    margin: 5px;
+}
+.product-name{
+    text-align: center;
+}
+.product-list-box{
+    display:flex;
+    flex-basis: 80%;
+    flex-wrap: wrap;
+    margin-left:2%;
+    padding: 0.4rem;
+    height: 90%;
+}
+.product-img{
+    height: 350px;
+    width: 250px;
+    
+    color: black;
+    text-decoration: none;
+
+}
+.pic{
+     height: 90%;
+    /* width: 270px; */
+    width: 100%;
+    display: block;
+    padding: 1rem;
+}
+#naming{  
+width: 50%;
+height: 8%;
+margin:0.3rem;
+position:static;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 0.5rem;
+text-decoration: none;
+}
+
+.product-item{
+   display: flex;
+    flex-direction: column; /* Stack image and name/price vertically */
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    /* height:75%; */
+    margin:0 5% 20px 0px;
+    text-align: center;
+    box-shadow: 0 2px 3px 0px #7a7a7a;
+    text-decoration: none;
+    
+}
+.product-name{
+    color: black;
+    font-weight: 700;
+    padding: 0.5rem;
+    text-decoration-line: none;
+}
+.product-price{
+    color: rgb(64, 63, 63);
+    font-weight: 650;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.product-item:nth-child(3n){
+   margin:0 0% 20px 0px;
+}
+
+.product-item:hover{
+    box-shadow: 0px 7px 5px 0px  #7a7a7a;
+    transition: box-shadow 0.15s linear 0s;
+}

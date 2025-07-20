@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./productlist2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  
+</head>
+<body>
+   <div class="loader-backdrop" id="loaderbackdrop" >
+    <div class="loader2">
+      <div></div>
+    </div>
+  </div>
+
+  <div class="loginpage">
+    <nav id="header">
+      <div class="container">
+        <div class="row">
+          <div class="headerwrapper">
+
+            <div class="logo">
+              <a href="./index.html" >Shop Cart</a>
+            </div>
+            
+             
+          </div>
+         
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+        <h2 class="pltitle">All products</h2>
+        <div class="plwrapper">
+            <div class="plsidebar">
+                <div class="plsidebartitle">Search Products</div>
+                <div class="sidebarfilter">
+                    <input type="text" placeholder="search by name" class="form-control" id="sbsearch">
+                </div>
+                <div class="plsidebartitle">Categories</div> 
+                <div class="Category-list" id="categorylist">
+                        <a href="productlist2.html"  class="category-item">All Products</a>                  
+
+                </div>
+
+                <div class="plsidebartitle">Filter by price
+                    <div class="price-filter">
+                        <div class="price-select" style="margin-top: 5px;">
+                          <div class="form-group" >
+                            <select name="min" id="minprice" class="form-select">
+                            <option value="00">00</option>
+                            <option value="10">10</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                             </select>
+                        </div>
+                        
+                            <div class="form-group">
+                                <select name="max" id="maxprice" class="form-select">
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50">50</option>
+                                    <option value="60">60</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                        
+                    </div>
+                    <div class="belowprice">
+                        <div class="minimum">Minimun</div>
+                        <div class="maximum">Maximum</div>
+                    </div>
+                    </div>
+   
+                </div>
+               
+
+                  
+              <button class="btn btn-warning" id="search" style="margin: 10px 0;">Search</button>
+              <button class="btn btn-danger" id="clear" style="margin: 10px 0;">Clear Filters</button> 
+            </div>
+            
+              <div class="product-list-box" id="productlistbox">
+                 
+              </div>
+
+        </div>
+    </div>
+  </div>
+      
+        
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+  <script src="./common2.js"></script>
+  <script src="./productlist2.js"></script>
+  
+</body>
+</html>

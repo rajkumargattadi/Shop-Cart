@@ -1,0 +1,116 @@
+*,*::after,*::before{
+  box-sizing:inherit;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+.headerwrapper{
+  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.category-list{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin-top: 3rem;
+
+}
+
+.category-title{
+text-align: center;
+margin-top: 3rem;
+}
+
+
+
+#header{
+  background-color: #ecf0f1;
+  padding: 1.25rem 0;
+}
+
+#header .headerwrapper .logo{
+  font-size: 1.35rem;
+}
+
+#header .headerwrapper .user-action{
+  font-size: 1.1rem;
+  line-height:1.5;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#header .headerwrapper .user-action .logout-btn{
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+
+#header .headerwrapper .logo a{
+  color: black;
+  letter-spacing: 4.5px;
+  font-family:cursive;
+    text-decoration: none;
+
+}
+
+#header .headerwrapper .user-action a{
+  color: black;
+  margin-right: 0.5 rem;
+  text-decoration: none;
+}
+
+#header .headerwrapper .user-action a:hover{
+  text-decoration-line: underline;
+}
+
+footer{
+position:sticky;
+bottom: 10px;
+}
+
+
+.loader2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+}
+
+.loader2 > div{
+  border: 5px solid rgb(241, 49, 49);
+  height:80px;
+  width: 80px;
+  border-radius: 50%;
+  border-top: 5px solid #f0eeeb;
+  border-bottom: 5px solid #f0eeeb;
+  animation: spinner 1s linear  infinite;
+
+}
+
+@keyframes spinner{
+  from{
+    transform:rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.loader-backdrop{
+  background-color: rgba(0,0,9,0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index:1000;
+  
+}
